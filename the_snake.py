@@ -155,10 +155,6 @@ def main():
             pygame.display.update()
         if snake.positions.count(snake.get_head_position()) > 1:
             snake.reset()
-            snake.draw()
-            handle_keys(snake)
-            snake.update_direction()
-            snake.move()
             pygame.display.update()
 
 
